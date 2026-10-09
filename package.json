@@ -1,14 +1,22 @@
 {
   "name": "marketing-data-watchdog",
   "version": "0.1.0",
-  "description": "An agent that checks whether marketing-sourced ARR by channel can be trusted, finds the broken links in the contact → deal → billing chain, and proposes fixes.",
+  "description": "An agent that checks whether marketing-sourced ARR by channel can be trusted, finds the broken links in the contact \u2192 deal \u2192 billing chain, and proposes fixes.",
   "type": "module",
   "private": true,
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
+    "watchdog": "node src/index.js",
     "seed": "node scripts/seed.js",
     "checks": "node scripts/run-checks.js",
+    "eval": "node evals/score.js",
     "test": "node --test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "dotenv": "^18.0.6"
+  }
 }

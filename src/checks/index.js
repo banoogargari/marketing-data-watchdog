@@ -7,6 +7,7 @@ import { checkChannelSpelling } from './channel-spelling.js';
 import { checkOrphanDeals } from './orphan-deals.js';
 import { checkBilling } from './billing.js';
 import { arrByChannel } from '../attribution.js';
+import { affectedChannels } from './affected.js';
 
 export function runChecks({ contacts, deals, billing, period }) {
   const C3 = checkDuplicates({ contacts, deals, period });
@@ -17,8 +18,10 @@ export function runChecks({ contacts, deals, billing, period }) {
   const C5 = checkBilling({ contacts, deals, billing, period, orphanSuggestions });
 
   const fixes = { channelMap: C2.channelMap, merges: C3.merges };
+  const checks = { C1, C2, C3, C4, C5 };
   return {
-    checks: { C1, C2, C3, C4, C5 },
+    checks,
+    affected: affectedChannels({ checks, contacts, deals }),
     fixes,
     arr: {
       reported: arrByChannel({ deals, contacts, period }),
