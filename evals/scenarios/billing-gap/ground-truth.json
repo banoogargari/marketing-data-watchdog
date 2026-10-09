@@ -1,0 +1,60 @@
+{
+  "scenario": "billing-gap",
+  "description": "Deal ARR differs from Stripe; a deal never billed; customers paying with no deal.",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-09-30",
+    "label": "Q3 2026"
+  },
+  "problems": [
+    "C5"
+  ],
+  "C5": {
+    "mismatches": [
+      {
+        "deal_id": "d5037",
+        "deal_arr": 30000,
+        "billed_arr": 27600,
+        "difference": 2400
+      },
+      {
+        "deal_id": "d5026",
+        "deal_arr": 30000,
+        "billed_arr": 28800,
+        "difference": 1200
+      },
+      {
+        "deal_id": "d5061",
+        "deal_arr": 18000,
+        "billed_arr": 14400,
+        "difference": 3600
+      }
+    ],
+    "unbilled_deal_ids": [
+      "d5063"
+    ],
+    "unmatched_subscription_ids": [
+      "sub_9501",
+      "sub_9502"
+    ]
+  },
+  "arr_by_channel": {
+    "reported": {
+      "google_ads": 367200,
+      "linkedin": 364800,
+      "organic": 208800,
+      "email": 297600,
+      "referral": 150000,
+      "webinar": 159600
+    },
+    "after_fixes": {
+      "google_ads": 367200,
+      "linkedin": 364800,
+      "organic": 208800,
+      "email": 297600,
+      "referral": 150000,
+      "webinar": 159600
+    }
+  },
+  "total_arr": 1548000
+}

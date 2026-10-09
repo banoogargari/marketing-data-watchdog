@@ -1,0 +1,90 @@
+{
+  "scenario": "channel-spelling",
+  "description": "linkedin and google_ads each spelled several ways.",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-09-30",
+    "label": "Q3 2026"
+  },
+  "problems": [
+    "C2"
+  ],
+  "C2": {
+    "variants": [
+      {
+        "variant": "LinkedIn",
+        "channel": "linkedin",
+        "contacts": 10,
+        "deal_ids": [
+          "d5052",
+          "d5063"
+        ],
+        "arr": 60000
+      },
+      {
+        "variant": "li",
+        "channel": "linkedin",
+        "contacts": 10,
+        "deal_ids": [
+          "d5028",
+          "d5035"
+        ],
+        "arr": 27600
+      },
+      {
+        "variant": "linkedin.com",
+        "channel": "linkedin",
+        "contacts": 10,
+        "deal_ids": [
+          "d5038",
+          "d5047"
+        ],
+        "arr": 60000
+      },
+      {
+        "variant": "Google Ads",
+        "channel": "google_ads",
+        "contacts": 10,
+        "deal_ids": [
+          "d5057",
+          "d5040"
+        ],
+        "arr": 21600
+      },
+      {
+        "variant": "adwords",
+        "channel": "google_ads",
+        "contacts": 10,
+        "deal_ids": [
+          "d5042",
+          "d5030"
+        ],
+        "arr": 18000
+      }
+    ]
+  },
+  "arr_by_channel": {
+    "reported": {
+      "google_ads": 327600,
+      "linkedin": 217200,
+      "organic": 208800,
+      "email": 297600,
+      "referral": 150000,
+      "webinar": 159600,
+      "li": 27600,
+      "adwords": 18000,
+      "linkedin.com": 60000,
+      "Google Ads": 21600,
+      "LinkedIn": 60000
+    },
+    "after_fixes": {
+      "google_ads": 367200,
+      "linkedin": 364800,
+      "organic": 208800,
+      "email": 297600,
+      "referral": 150000,
+      "webinar": 159600
+    }
+  },
+  "total_arr": 1548000
+}

@@ -1,0 +1,882 @@
+[
+  {
+    "subscription_id": "sub_9001",
+    "customer_email": "chloe.evans@vectorlogistics.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-11"
+  },
+  {
+    "subscription_id": "sub_9002",
+    "customer_email": "umar.zimmer@pixelworks.com",
+    "amount": 3000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-05"
+  },
+  {
+    "subscription_id": "sub_9003",
+    "customer_email": "grace.rahimi@harbormedia.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-23"
+  },
+  {
+    "subscription_id": "sub_9004",
+    "customer_email": "elena.berg@vectorretail.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-03"
+  },
+  {
+    "subscription_id": "sub_9005",
+    "customer_email": "olivia.xu@granitelogistics.com",
+    "amount": 3000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-10"
+  },
+  {
+    "subscription_id": "sub_9006",
+    "customer_email": "nikhil.diaz@orbitworks.com",
+    "amount": 3000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-04"
+  },
+  {
+    "subscription_id": "sub_9007",
+    "customer_email": "hiro.novak@lumenhealth.com",
+    "amount": 12000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-17"
+  },
+  {
+    "subscription_id": "sub_9008",
+    "customer_email": "nikhil.tanaka@cedaranalytics.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-21"
+  },
+  {
+    "subscription_id": "sub_9009",
+    "customer_email": "dara.adams@quantumbio.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-29"
+  },
+  {
+    "subscription_id": "sub_9010",
+    "customer_email": "chloe.evans@silverretail.com",
+    "amount": 18000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-04"
+  },
+  {
+    "subscription_id": "sub_9011",
+    "customer_email": "elena.brooks@brightbio.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-06"
+  },
+  {
+    "subscription_id": "sub_9012",
+    "customer_email": "rosa.quint@silverbio.com",
+    "amount": 9600,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-25"
+  },
+  {
+    "subscription_id": "sub_9013",
+    "customer_email": "billing@ironsystems.com",
+    "amount": 3000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-01"
+  },
+  {
+    "subscription_id": "sub_9014",
+    "customer_email": "billing@brightworks.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-28"
+  },
+  {
+    "subscription_id": "sub_9015",
+    "customer_email": "ximena.evans@cedarlearning.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-04"
+  },
+  {
+    "subscription_id": "sub_9016",
+    "customer_email": "olivia.garcia@harborsystems.com",
+    "amount": 6000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-08"
+  },
+  {
+    "subscription_id": "sub_9017",
+    "customer_email": "umar.berg@atlasbio.com",
+    "amount": 6000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-10"
+  },
+  {
+    "subscription_id": "sub_9018",
+    "customer_email": "billing@granitehealth.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-10-03"
+  },
+  {
+    "subscription_id": "sub_9019",
+    "customer_email": "kira.fischer@bluecloud.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-22"
+  },
+  {
+    "subscription_id": "sub_9020",
+    "customer_email": "ava.silva@pixelmedia.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-12"
+  },
+  {
+    "subscription_id": "sub_9021",
+    "customer_email": "zoe.patel@ironfoods.com",
+    "amount": 2500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-21"
+  },
+  {
+    "subscription_id": "sub_9022",
+    "customer_email": "quinn.quint@orbitbio.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-05"
+  },
+  {
+    "subscription_id": "sub_9023",
+    "customer_email": "umar.okafor@quantumfinance.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-10"
+  },
+  {
+    "subscription_id": "sub_9024",
+    "customer_email": "nikhil.hassan@echobio.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-28"
+  },
+  {
+    "subscription_id": "sub_9025",
+    "customer_email": "rosa.weber@vectorenergy.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-21"
+  },
+  {
+    "subscription_id": "sub_9026",
+    "customer_email": "leo.moreau@lumenlogistics.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-21"
+  },
+  {
+    "subscription_id": "sub_9027",
+    "customer_email": "bianca.tanaka@granitesystems.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-08"
+  },
+  {
+    "subscription_id": "sub_9028",
+    "customer_email": "billing@coralsystems.com",
+    "amount": 18000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-12"
+  },
+  {
+    "subscription_id": "sub_9029",
+    "customer_email": "ben.johnson@prairiefinance.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-15"
+  },
+  {
+    "subscription_id": "sub_9030",
+    "customer_email": "billing@quantummedia.com",
+    "amount": 6000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-23"
+  },
+  {
+    "subscription_id": "sub_9031",
+    "customer_email": "dara.adams@prairieanalytics.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-17"
+  },
+  {
+    "subscription_id": "sub_9032",
+    "customer_email": "zoe.khan@pixelcloud.com",
+    "amount": 12000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-16"
+  },
+  {
+    "subscription_id": "sub_9033",
+    "customer_email": "chen.moreau@willowcloud.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-07"
+  },
+  {
+    "subscription_id": "sub_9034",
+    "customer_email": "billing@bluebio.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-24"
+  },
+  {
+    "subscription_id": "sub_9035",
+    "customer_email": "ben.rahimi@echofinance.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-10-01"
+  },
+  {
+    "subscription_id": "sub_9036",
+    "customer_email": "kira.kowalski@nimbuscloud.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-13"
+  },
+  {
+    "subscription_id": "sub_9037",
+    "customer_email": "farid.weber@willowlabs.com",
+    "amount": 2500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-10-02"
+  },
+  {
+    "subscription_id": "sub_9038",
+    "customer_email": "billing@cedarretail.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-17"
+  },
+  {
+    "subscription_id": "sub_9039",
+    "customer_email": "olivia.rahimi@summitanalytics.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-15"
+  },
+  {
+    "subscription_id": "sub_9040",
+    "customer_email": "yusuf.moreau@echosystems.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-13"
+  },
+  {
+    "subscription_id": "sub_9041",
+    "customer_email": "billing@lumenfoods.com",
+    "amount": 2500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-21"
+  },
+  {
+    "subscription_id": "sub_9042",
+    "customer_email": "nikhil.kowalski@quantumanalytics.com",
+    "amount": 1000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-10"
+  },
+  {
+    "subscription_id": "sub_9043",
+    "customer_email": "jonah.ito@summitworks.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-21"
+  },
+  {
+    "subscription_id": "sub_9044",
+    "customer_email": "sam.johnson@cedarbio.com",
+    "amount": 9600,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-23"
+  },
+  {
+    "subscription_id": "sub_9045",
+    "customer_email": "umar.silva@ironworks.com",
+    "amount": 36000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-10-01"
+  },
+  {
+    "subscription_id": "sub_9046",
+    "customer_email": "umar.quint@cedarrobotics.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-25"
+  },
+  {
+    "subscription_id": "sub_9047",
+    "customer_email": "kira.diaz@cedarcloud.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-10-01"
+  },
+  {
+    "subscription_id": "sub_9048",
+    "customer_email": "arash.lopez@atlasmedia.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-09"
+  },
+  {
+    "subscription_id": "sub_9049",
+    "customer_email": "billing@silverlogistics.com",
+    "amount": 10800,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-02"
+  },
+  {
+    "subscription_id": "sub_9050",
+    "customer_email": "arash.brooks@nimbusbio.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-29"
+  },
+  {
+    "subscription_id": "sub_9051",
+    "customer_email": "billing@lumenretail.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-09"
+  },
+  {
+    "subscription_id": "sub_9052",
+    "customer_email": "ximena.usman@orbitlearning.com",
+    "amount": 36000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-26"
+  },
+  {
+    "subscription_id": "sub_9053",
+    "customer_email": "billing@ironlearning.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-13"
+  },
+  {
+    "subscription_id": "sub_9054",
+    "customer_email": "wes.fischer@northlearning.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-20"
+  },
+  {
+    "subscription_id": "sub_9055",
+    "customer_email": "billing@willowhealth.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-08-12"
+  },
+  {
+    "subscription_id": "sub_9056",
+    "customer_email": "grace.berg@pixellogistics.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-05"
+  },
+  {
+    "subscription_id": "sub_9057",
+    "customer_email": "billing@echolabs.com",
+    "amount": 12000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-02"
+  },
+  {
+    "subscription_id": "sub_9058",
+    "customer_email": "chen.hassan@summitbio.com",
+    "amount": 48000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-16"
+  },
+  {
+    "subscription_id": "sub_9059",
+    "customer_email": "vera.kowalski@willowworks.com",
+    "amount": 2500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-16"
+  },
+  {
+    "subscription_id": "sub_9060",
+    "customer_email": "leo.chen@harborlearning.com",
+    "amount": 36000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-23"
+  },
+  {
+    "subscription_id": "sub_9061",
+    "customer_email": "yusuf.okafor@echolearning.com",
+    "amount": 18000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-04"
+  },
+  {
+    "subscription_id": "sub_9062",
+    "customer_email": "dara.rossi@northbio.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-24"
+  },
+  {
+    "subscription_id": "sub_9063",
+    "customer_email": "billing@prairieenergy.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-09-26"
+  },
+  {
+    "subscription_id": "sub_9064",
+    "customer_email": "billing@harborlabs.com",
+    "amount": 6000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-08-19"
+  },
+  {
+    "subscription_id": "sub_9065",
+    "customer_email": "leo.tanaka@lumenbio.com",
+    "amount": 36000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-15"
+  },
+  {
+    "subscription_id": "sub_9066",
+    "customer_email": "quinn.quint@orbitenergy.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-19"
+  },
+  {
+    "subscription_id": "sub_9067",
+    "customer_email": "farid.adams@corallabs.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-07-22"
+  },
+  {
+    "subscription_id": "sub_9068",
+    "customer_email": "leo.johnson@prairielogistics.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-09-04"
+  },
+  {
+    "subscription_id": "sub_9069",
+    "customer_email": "maya.usman@brightlabs.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-10-03"
+  },
+  {
+    "subscription_id": "sub_9070",
+    "customer_email": "quinn.khan@atlasretail.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-07-25"
+  },
+  {
+    "subscription_id": "sub_9071",
+    "customer_email": "leo.chen@brightanalytics.com",
+    "amount": 30000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-04-09"
+  },
+  {
+    "subscription_id": "sub_9072",
+    "customer_email": "pedro.silva@willowenergy.com",
+    "amount": 2500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-05-05"
+  },
+  {
+    "subscription_id": "sub_9073",
+    "customer_email": "billing@quantumfoods.com",
+    "amount": 9600,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-05-11"
+  },
+  {
+    "subscription_id": "sub_9074",
+    "customer_email": "yusuf.johnson@pixelenergy.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-05-21"
+  },
+  {
+    "subscription_id": "sub_9075",
+    "customer_email": "quinn.chen@atlasrobotics.com",
+    "amount": 48000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-04-28"
+  },
+  {
+    "subscription_id": "sub_9076",
+    "customer_email": "leo.novak@brightcloud.com",
+    "amount": 9600,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-26"
+  },
+  {
+    "subscription_id": "sub_9077",
+    "customer_email": "quinn.weber@quantumcloud.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-04-27"
+  },
+  {
+    "subscription_id": "sub_9078",
+    "customer_email": "maya.berg@northfinance.com",
+    "amount": 9600,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-19"
+  },
+  {
+    "subscription_id": "sub_9079",
+    "customer_email": "ximena.quint@atlasenergy.com",
+    "amount": 36000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-05-05"
+  },
+  {
+    "subscription_id": "sub_9080",
+    "customer_email": "billing@brightenergy.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-04-14"
+  },
+  {
+    "subscription_id": "sub_9081",
+    "customer_email": "billing@willowretail.com",
+    "amount": 1000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-04-18"
+  },
+  {
+    "subscription_id": "sub_9082",
+    "customer_email": "quinn.rossi@lumenfinance.com",
+    "amount": 6000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-03"
+  },
+  {
+    "subscription_id": "sub_9083",
+    "customer_email": "ava.berg@coralcloud.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-06-19"
+  },
+  {
+    "subscription_id": "sub_9084",
+    "customer_email": "yusuf.chen@granitemedia.com",
+    "amount": 6000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-20"
+  },
+  {
+    "subscription_id": "sub_9085",
+    "customer_email": "bianca.berg@prairiecloud.com",
+    "amount": 48000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-20"
+  },
+  {
+    "subscription_id": "sub_9086",
+    "customer_email": "daniel.tanaka@vectorsystems.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-05-21"
+  },
+  {
+    "subscription_id": "sub_9087",
+    "customer_email": "vera.novak@cedarenergy.com",
+    "amount": 36000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-06"
+  },
+  {
+    "subscription_id": "sub_9088",
+    "customer_email": "vera.berg@northsystems.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-05-17"
+  },
+  {
+    "subscription_id": "sub_9089",
+    "customer_email": "pedro.hassan@lumencloud.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-06-06"
+  },
+  {
+    "subscription_id": "sub_9090",
+    "customer_email": "maya.diaz@atlaslogistics.com",
+    "amount": 6000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-06"
+  },
+  {
+    "subscription_id": "sub_9091",
+    "customer_email": "billing@nimbusrobotics.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-06-13"
+  },
+  {
+    "subscription_id": "sub_9092",
+    "customer_email": "dara.nguyen@willowlogistics.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-05-23"
+  },
+  {
+    "subscription_id": "sub_9093",
+    "customer_email": "vera.patel@lumensystems.com",
+    "amount": 48000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-12"
+  },
+  {
+    "subscription_id": "sub_9094",
+    "customer_email": "kira.ito@nimbushealth.com",
+    "amount": 1000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-06-07"
+  },
+  {
+    "subscription_id": "sub_9095",
+    "customer_email": "rosa.johnson@quantumlogistics.com",
+    "amount": 12000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-04-04"
+  },
+  {
+    "subscription_id": "sub_9096",
+    "customer_email": "elena.chen@ironhealth.com",
+    "amount": 1500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-04-30"
+  },
+  {
+    "subscription_id": "sub_9097",
+    "customer_email": "quinn.garcia@nimbuslabs.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-05-03"
+  },
+  {
+    "subscription_id": "sub_9098",
+    "customer_email": "ben.garcia@ironlogistics.com",
+    "amount": 24000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-04-12"
+  },
+  {
+    "subscription_id": "sub_9099",
+    "customer_email": "wes.okafor@northlabs.com",
+    "amount": 12000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-05-15"
+  },
+  {
+    "subscription_id": "sub_9100",
+    "customer_email": "isla.usman@northmedia.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-06-10"
+  },
+  {
+    "subscription_id": "sub_9101",
+    "customer_email": "chen.rossi@silverrobotics.com",
+    "amount": 500,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-04-21"
+  },
+  {
+    "subscription_id": "sub_9102",
+    "customer_email": "tara.evans@vectoranalytics.com",
+    "amount": 48000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-01"
+  },
+  {
+    "subscription_id": "sub_9103",
+    "customer_email": "billing@nimbussystems.com",
+    "amount": 18000,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-15"
+  },
+  {
+    "subscription_id": "sub_9104",
+    "customer_email": "ava.garcia@silverlearning.com",
+    "amount": 2000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-06-12"
+  },
+  {
+    "subscription_id": "sub_9105",
+    "customer_email": "hiro.xu@prairiefoods.com",
+    "amount": 4000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-04-06"
+  },
+  {
+    "subscription_id": "sub_9106",
+    "customer_email": "vera.moreau@harborfinance.com",
+    "amount": 1000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-04-18"
+  },
+  {
+    "subscription_id": "sub_9107",
+    "customer_email": "pedro.hassan@pixellearning.com",
+    "amount": 9600,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-18"
+  },
+  {
+    "subscription_id": "sub_9108",
+    "customer_email": "billing@harborrobotics.com",
+    "amount": 1000,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-05-21"
+  },
+  {
+    "subscription_id": "sub_9109",
+    "customer_email": "vera.varga@echoanalytics.com",
+    "amount": 800,
+    "interval": "month",
+    "status": "active",
+    "start_date": "2026-06-02"
+  },
+  {
+    "subscription_id": "sub_9110",
+    "customer_email": "leo.lopez@lumenmedia.com",
+    "amount": 9600,
+    "interval": "year",
+    "status": "active",
+    "start_date": "2026-06-14"
+  }
+]

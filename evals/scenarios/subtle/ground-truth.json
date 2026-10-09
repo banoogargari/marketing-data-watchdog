@@ -1,0 +1,105 @@
+{
+  "scenario": "subtle",
+  "description": "Small versions of every problem, to test sensitivity.",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-09-30",
+    "label": "Q3 2026"
+  },
+  "problems": [
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C1"
+  ],
+  "C2": {
+    "variants": [
+      {
+        "variant": "Linkedin",
+        "channel": "linkedin",
+        "contacts": 3,
+        "deal_ids": [
+          "d5063"
+        ],
+        "arr": 24000
+      }
+    ]
+  },
+  "C3": {
+    "groups": [
+      {
+        "keep": "c1064",
+        "duplicate": "c1962",
+        "deal_id": "d5064",
+        "channel": "webinar",
+        "arr": 6000
+      },
+      {
+        "keep": "c1044",
+        "duplicate": "c1963",
+        "deal_id": "d5044",
+        "channel": "organic",
+        "arr": 9600
+      }
+    ],
+    "deal_ids": [
+      "d5064",
+      "d5044"
+    ],
+    "arr": 15600
+  },
+  "C4": {
+    "deals": [
+      {
+        "deal_id": "d5014",
+        "arr": 9600,
+        "true_contact_id": "c1014"
+      }
+    ],
+    "arr": 9600
+  },
+  "C5": {
+    "mismatches": [
+      {
+        "deal_id": "d5049",
+        "deal_arr": 12000,
+        "billed_arr": 10800,
+        "difference": 1200
+      }
+    ],
+    "unbilled_deal_ids": [],
+    "unmatched_subscription_ids": []
+  },
+  "C1": {
+    "start_date": "2026-08-26",
+    "contacts": 15,
+    "deal_ids": [
+      "d5043",
+      "d5032"
+    ],
+    "arr": 30000
+  },
+  "arr_by_channel": {
+    "reported": {
+      "google_ads": 355200,
+      "linkedin": 340800,
+      "organic": 189600,
+      "email": 297600,
+      "referral": 132000,
+      "Unknown": 55200,
+      "webinar": 153600,
+      "Linkedin": 24000
+    },
+    "after_fixes": {
+      "google_ads": 355200,
+      "linkedin": 364800,
+      "organic": 199200,
+      "email": 297600,
+      "referral": 132000,
+      "Unknown": 39600,
+      "webinar": 159600
+    }
+  },
+  "total_arr": 1548000
+}

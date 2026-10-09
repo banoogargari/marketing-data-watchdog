@@ -1,0 +1,129 @@
+{
+  "scenario": "duplicates",
+  "description": "Duplicate contacts; deals sit on the copy that has no source.",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-09-30",
+    "label": "Q3 2026"
+  },
+  "problems": [
+    "C3"
+  ],
+  "C3": {
+    "groups": [
+      {
+        "keep": "c1044",
+        "duplicate": "c1962",
+        "deal_id": "d5044",
+        "channel": "organic",
+        "arr": 9600
+      },
+      {
+        "keep": "c1022",
+        "duplicate": "c1963",
+        "deal_id": "d5022",
+        "channel": "google_ads",
+        "arr": 6000
+      },
+      {
+        "keep": "c1048",
+        "duplicate": "c1964",
+        "deal_id": "d5048",
+        "channel": "organic",
+        "arr": 9600
+      },
+      {
+        "keep": "c1036",
+        "duplicate": "c1965",
+        "deal_id": "d5036",
+        "channel": "linkedin",
+        "arr": 9600
+      },
+      {
+        "keep": "c1069",
+        "duplicate": "c1966",
+        "deal_id": "d5069",
+        "channel": "email",
+        "arr": 6000
+      },
+      {
+        "keep": "c1003",
+        "duplicate": "c1967",
+        "deal_id": "d5003",
+        "channel": "organic",
+        "arr": 30000
+      },
+      {
+        "keep": "c1303",
+        "duplicate": "c1968",
+        "deal_id": null,
+        "channel": "email",
+        "arr": 0
+      },
+      {
+        "keep": "c1141",
+        "duplicate": "c1969",
+        "deal_id": null,
+        "channel": "webinar",
+        "arr": 0
+      },
+      {
+        "keep": "c1149",
+        "duplicate": "c1970",
+        "deal_id": null,
+        "channel": "google_ads",
+        "arr": 0
+      },
+      {
+        "keep": "c1194",
+        "duplicate": "c1971",
+        "deal_id": null,
+        "channel": "organic",
+        "arr": 0
+      },
+      {
+        "keep": "c1315",
+        "duplicate": "c1972",
+        "deal_id": null,
+        "channel": "organic",
+        "arr": 0
+      },
+      {
+        "keep": "c1261",
+        "duplicate": "c1973",
+        "deal_id": null,
+        "channel": "google_ads",
+        "arr": 0
+      }
+    ],
+    "deal_ids": [
+      "d5044",
+      "d5022",
+      "d5048",
+      "d5036",
+      "d5069",
+      "d5003"
+    ],
+    "arr": 70800
+  },
+  "arr_by_channel": {
+    "reported": {
+      "google_ads": 361200,
+      "linkedin": 355200,
+      "Unknown": 70800,
+      "email": 291600,
+      "organic": 159600,
+      "referral": 150000,
+      "webinar": 159600
+    },
+    "after_fixes": {
+      "google_ads": 367200,
+      "linkedin": 364800,
+      "organic": 208800,
+      "email": 297600,
+      "referral": 150000,
+      "webinar": 159600
+    }
+  },
+  "total_arr": 1548000
+}

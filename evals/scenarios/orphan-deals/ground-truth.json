@@ -1,0 +1,58 @@
+{
+  "scenario": "orphan-deals",
+  "description": "Won deals not linked to any contact.",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-09-30",
+    "label": "Q3 2026"
+  },
+  "problems": [
+    "C4"
+  ],
+  "C4": {
+    "deals": [
+      {
+        "deal_id": "d5053",
+        "arr": 24000,
+        "true_contact_id": "c1053"
+      },
+      {
+        "deal_id": "d5019",
+        "arr": 18000,
+        "true_contact_id": "c1019"
+      },
+      {
+        "deal_id": "d5056",
+        "arr": 30000,
+        "true_contact_id": "c1056"
+      },
+      {
+        "deal_id": "d5057",
+        "arr": 12000,
+        "true_contact_id": "c1057"
+      }
+    ],
+    "arr": 84000
+  },
+  "arr_by_channel": {
+    "reported": {
+      "google_ads": 331200,
+      "linkedin": 316800,
+      "organic": 208800,
+      "email": 297600,
+      "referral": 150000,
+      "webinar": 159600,
+      "Unknown": 84000
+    },
+    "after_fixes": {
+      "google_ads": 331200,
+      "linkedin": 316800,
+      "organic": 208800,
+      "email": 297600,
+      "referral": 150000,
+      "webinar": 159600,
+      "Unknown": 84000
+    }
+  },
+  "total_arr": 1548000
+}

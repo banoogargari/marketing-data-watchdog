@@ -1,0 +1,259 @@
+{
+  "scenario": "everything",
+  "description": "All of the above at once.",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-09-30",
+    "label": "Q3 2026"
+  },
+  "problems": [
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C1"
+  ],
+  "C2": {
+    "variants": [
+      {
+        "variant": "LinkedIn",
+        "channel": "linkedin",
+        "contacts": 10,
+        "deal_ids": [
+          "d5002",
+          "d5009"
+        ],
+        "arr": 45600
+      },
+      {
+        "variant": "li",
+        "channel": "linkedin",
+        "contacts": 10,
+        "deal_ids": [
+          "d5026",
+          "d5063"
+        ],
+        "arr": 54000
+      },
+      {
+        "variant": "linkedin.com",
+        "channel": "linkedin",
+        "contacts": 10,
+        "deal_ids": [
+          "d5015",
+          "d5047"
+        ],
+        "arr": 54000
+      },
+      {
+        "variant": "Google Ads",
+        "channel": "google_ads",
+        "contacts": 10,
+        "deal_ids": [
+          "d5045",
+          "d5055"
+        ],
+        "arr": 54000
+      },
+      {
+        "variant": "adwords",
+        "channel": "google_ads",
+        "contacts": 10,
+        "deal_ids": [
+          "d5040",
+          "d5042"
+        ],
+        "arr": 21600
+      }
+    ]
+  },
+  "C3": {
+    "groups": [
+      {
+        "keep": "c1048",
+        "duplicate": "c1962",
+        "deal_id": "d5048",
+        "channel": "organic",
+        "arr": 9600
+      },
+      {
+        "keep": "c1006",
+        "duplicate": "c1963",
+        "deal_id": "d5006",
+        "channel": "organic",
+        "arr": 36000
+      },
+      {
+        "keep": "c1005",
+        "duplicate": "c1964",
+        "deal_id": "d5005",
+        "channel": "email",
+        "arr": 36000
+      },
+      {
+        "keep": "c1027",
+        "duplicate": "c1965",
+        "deal_id": "d5027",
+        "channel": "email",
+        "arr": 48000
+      },
+      {
+        "keep": "c1010",
+        "duplicate": "c1966",
+        "deal_id": "d5010",
+        "channel": "email",
+        "arr": 18000
+      },
+      {
+        "keep": "c1030",
+        "duplicate": "c1967",
+        "deal_id": "d5030",
+        "channel": "google_ads",
+        "arr": 6000
+      },
+      {
+        "keep": "c1401",
+        "duplicate": "c1968",
+        "deal_id": null,
+        "channel": "google_ads",
+        "arr": 0
+      },
+      {
+        "keep": "c1168",
+        "duplicate": "c1969",
+        "deal_id": null,
+        "channel": "webinar",
+        "arr": 0
+      },
+      {
+        "keep": "c1393",
+        "duplicate": "c1970",
+        "deal_id": null,
+        "channel": "email",
+        "arr": 0
+      },
+      {
+        "keep": "c1410",
+        "duplicate": "c1971",
+        "deal_id": null,
+        "channel": "google_ads",
+        "arr": 0
+      },
+      {
+        "keep": "c1232",
+        "duplicate": "c1972",
+        "deal_id": null,
+        "channel": "referral",
+        "arr": 0
+      },
+      {
+        "keep": "c1181",
+        "duplicate": "c1973",
+        "deal_id": null,
+        "channel": "webinar",
+        "arr": 0
+      }
+    ],
+    "deal_ids": [
+      "d5048",
+      "d5006",
+      "d5005",
+      "d5027",
+      "d5010",
+      "d5030"
+    ],
+    "arr": 153600
+  },
+  "C4": {
+    "deals": [
+      {
+        "deal_id": "d5069",
+        "arr": 6000,
+        "true_contact_id": "c1069"
+      },
+      {
+        "deal_id": "d5032",
+        "arr": 12000,
+        "true_contact_id": "c1032"
+      },
+      {
+        "deal_id": "d5057",
+        "arr": 12000,
+        "true_contact_id": "c1057"
+      },
+      {
+        "deal_id": "d5053",
+        "arr": 24000,
+        "true_contact_id": "c1053"
+      }
+    ],
+    "arr": 54000
+  },
+  "C5": {
+    "mismatches": [
+      {
+        "deal_id": "d5001",
+        "deal_arr": 24000,
+        "billed_arr": 20400,
+        "difference": 3600
+      },
+      {
+        "deal_id": "d5012",
+        "deal_arr": 9600,
+        "billed_arr": 7200,
+        "difference": 2400
+      },
+      {
+        "deal_id": "d5058",
+        "deal_arr": 48000,
+        "billed_arr": 45600,
+        "difference": 2400
+      }
+    ],
+    "unbilled_deal_ids": [
+      "d5068"
+    ],
+    "unmatched_subscription_ids": [
+      "sub_9501",
+      "sub_9502"
+    ]
+  },
+  "C1": {
+    "start_date": "2026-08-14",
+    "contacts": 28,
+    "deal_ids": [
+      "d5041",
+      "d5016",
+      "d5051",
+      "d5037",
+      "d5025"
+    ],
+    "arr": 126000
+  },
+  "arr_by_channel": {
+    "reported": {
+      "google_ads": 207600,
+      "LinkedIn": 45600,
+      "organic": 133200,
+      "linkedin": 211200,
+      "Unknown": 333600,
+      "referral": 120000,
+      "email": 189600,
+      "linkedin.com": 54000,
+      "li": 54000,
+      "webinar": 123600,
+      "adwords": 21600,
+      "Google Ads": 54000
+    },
+    "after_fixes": {
+      "google_ads": 289200,
+      "linkedin": 364800,
+      "organic": 178800,
+      "email": 291600,
+      "referral": 120000,
+      "Unknown": 180000,
+      "webinar": 123600
+    }
+  },
+  "total_arr": 1548000
+}

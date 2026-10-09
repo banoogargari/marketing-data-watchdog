@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "d5001",
+    "dealname": "Vector Logistics — New business",
+    "company": "Vector Logistics",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-11",
+    "contact_id": "c1001"
+  },
+  {
+    "id": "d5002",
+    "dealname": "Pixel Works — New business",
+    "company": "Pixel Works",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-03",
+    "contact_id": "c1002"
+  },
+  {
+    "id": "d5003",
+    "dealname": "Harbor Media — New business",
+    "company": "Harbor Media",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-20",
+    "contact_id": "c1967"
+  },
+  {
+    "id": "d5004",
+    "dealname": "Vector Retail — New business",
+    "company": "Vector Retail",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-02",
+    "contact_id": "c1004"
+  },
+  {
+    "id": "d5005",
+    "dealname": "Granite Logistics — New business",
+    "company": "Granite Logistics",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-10",
+    "contact_id": "c1005"
+  },
+  {
+    "id": "d5006",
+    "dealname": "Orbit Works — New business",
+    "company": "Orbit Works",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-04",
+    "contact_id": "c1006"
+  },
+  {
+    "id": "d5007",
+    "dealname": "Lumen Health — New business",
+    "company": "Lumen Health",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-14",
+    "contact_id": "c1007"
+  },
+  {
+    "id": "d5008",
+    "dealname": "Cedar Analytics — New business",
+    "company": "Cedar Analytics",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-17",
+    "contact_id": "c1008"
+  },
+  {
+    "id": "d5009",
+    "dealname": "Quantum Bio — New business",
+    "company": "Quantum Bio",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-29",
+    "contact_id": "c1009"
+  },
+  {
+    "id": "d5010",
+    "dealname": "Silver Retail — New business",
+    "company": "Silver Retail",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-02",
+    "contact_id": "c1010"
+  },
+  {
+    "id": "d5011",
+    "dealname": "Bright Bio — New business",
+    "company": "Bright Bio",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-02",
+    "contact_id": "c1011"
+  },
+  {
+    "id": "d5012",
+    "dealname": "Silver Bio — New business",
+    "company": "Silver Bio",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-25",
+    "contact_id": "c1012"
+  },
+  {
+    "id": "d5013",
+    "dealname": "Iron Systems — New business",
+    "company": "Iron Systems",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-31",
+    "contact_id": "c1013"
+  },
+  {
+    "id": "d5014",
+    "dealname": "Bright Works — New business",
+    "company": "Bright Works",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-27",
+    "contact_id": "c1014"
+  },
+  {
+    "id": "d5015",
+    "dealname": "Cedar Learning — New business",
+    "company": "Cedar Learning",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-02",
+    "contact_id": "c1015"
+  },
+  {
+    "id": "d5016",
+    "dealname": "Harbor Systems — New business",
+    "company": "Harbor Systems",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-05",
+    "contact_id": "c1016"
+  },
+  {
+    "id": "d5017",
+    "dealname": "Atlas Bio — New business",
+    "company": "Atlas Bio",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-06",
+    "contact_id": "c1017"
+  },
+  {
+    "id": "d5018",
+    "dealname": "Granite Health — New business",
+    "company": "Granite Health",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-28",
+    "contact_id": "c1018"
+  },
+  {
+    "id": "d5019",
+    "dealname": "Blue Cloud — New business",
+    "company": "Blue Cloud",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-19",
+    "contact_id": "c1019"
+  },
+  {
+    "id": "d5020",
+    "dealname": "Pixel Media — New business",
+    "company": "Pixel Media",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-10",
+    "contact_id": "c1020"
+  },
+  {
+    "id": "d5021",
+    "dealname": "Iron Foods — New business",
+    "company": "Iron Foods",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-17",
+    "contact_id": "c1021"
+  },
+  {
+    "id": "d5022",
+    "dealname": "Orbit Bio — New business",
+    "company": "Orbit Bio",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-31",
+    "contact_id": "c1963"
+  },
+  {
+    "id": "d5023",
+    "dealname": "Quantum Finance — New business",
+    "company": "Quantum Finance",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-05",
+    "contact_id": "c1023"
+  },
+  {
+    "id": "d5024",
+    "dealname": "Echo Bio — New business",
+    "company": "Echo Bio",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-23",
+    "contact_id": "c1024"
+  },
+  {
+    "id": "d5025",
+    "dealname": "Vector Energy — New business",
+    "company": "Vector Energy",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-16",
+    "contact_id": "c1025"
+  },
+  {
+    "id": "d5026",
+    "dealname": "Lumen Logistics — New business",
+    "company": "Lumen Logistics",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-20",
+    "contact_id": "c1026"
+  },
+  {
+    "id": "d5027",
+    "dealname": "Granite Systems — New business",
+    "company": "Granite Systems",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-03",
+    "contact_id": "c1027"
+  },
+  {
+    "id": "d5028",
+    "dealname": "Coral Systems — New business",
+    "company": "Coral Systems",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-12",
+    "contact_id": "c1028"
+  },
+  {
+    "id": "d5029",
+    "dealname": "Prairie Finance — New business",
+    "company": "Prairie Finance",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-12",
+    "contact_id": "c1029"
+  },
+  {
+    "id": "d5030",
+    "dealname": "Quantum Media — New business",
+    "company": "Quantum Media",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-20",
+    "contact_id": "c1030"
+  },
+  {
+    "id": "d5031",
+    "dealname": "Prairie Analytics — New business",
+    "company": "Prairie Analytics",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-14",
+    "contact_id": "c1031"
+  },
+  {
+    "id": "d5032",
+    "dealname": "Pixel Cloud — New business",
+    "company": "Pixel Cloud",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-13",
+    "contact_id": "c1032"
+  },
+  {
+    "id": "d5033",
+    "dealname": "Willow Cloud — New business",
+    "company": "Willow Cloud",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-04",
+    "contact_id": "c1033"
+  },
+  {
+    "id": "d5034",
+    "dealname": "Blue Bio — New business",
+    "company": "Blue Bio",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-23",
+    "contact_id": "c1034"
+  },
+  {
+    "id": "d5035",
+    "dealname": "Echo Finance — New business",
+    "company": "Echo Finance",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-27",
+    "contact_id": "c1035"
+  },
+  {
+    "id": "d5036",
+    "dealname": "Nimbus Cloud — New business",
+    "company": "Nimbus Cloud",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-13",
+    "contact_id": "c1965"
+  },
+  {
+    "id": "d5037",
+    "dealname": "Willow Labs — New business",
+    "company": "Willow Labs",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-28",
+    "contact_id": "c1037"
+  },
+  {
+    "id": "d5038",
+    "dealname": "Cedar Retail — New business",
+    "company": "Cedar Retail",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-15",
+    "contact_id": "c1038"
+  },
+  {
+    "id": "d5039",
+    "dealname": "Summit Analytics — New business",
+    "company": "Summit Analytics",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-11",
+    "contact_id": "c1039"
+  },
+  {
+    "id": "d5040",
+    "dealname": "Echo Systems — New business",
+    "company": "Echo Systems",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-12",
+    "contact_id": "c1040"
+  },
+  {
+    "id": "d5041",
+    "dealname": "Lumen Foods — New business",
+    "company": "Lumen Foods",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-18",
+    "contact_id": "c1041"
+  },
+  {
+    "id": "d5042",
+    "dealname": "Quantum Analytics — New business",
+    "company": "Quantum Analytics",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-07",
+    "contact_id": "c1042"
+  },
+  {
+    "id": "d5043",
+    "dealname": "Summit Works — New business",
+    "company": "Summit Works",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-20",
+    "contact_id": "c1043"
+  },
+  {
+    "id": "d5044",
+    "dealname": "Cedar Bio — New business",
+    "company": "Cedar Bio",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-21",
+    "contact_id": "c1962"
+  },
+  {
+    "id": "d5045",
+    "dealname": "Iron Works — New business",
+    "company": "Iron Works",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-27",
+    "contact_id": "c1045"
+  },
+  {
+    "id": "d5046",
+    "dealname": "Cedar Robotics — New business",
+    "company": "Cedar Robotics",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-21",
+    "contact_id": "c1046"
+  },
+  {
+    "id": "d5047",
+    "dealname": "Cedar Cloud — New business",
+    "company": "Cedar Cloud",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-26",
+    "contact_id": "c1047"
+  },
+  {
+    "id": "d5048",
+    "dealname": "Atlas Media — New business",
+    "company": "Atlas Media",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-05",
+    "contact_id": "c1964"
+  },
+  {
+    "id": "d5049",
+    "dealname": "Silver Logistics — New business",
+    "company": "Silver Logistics",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-28",
+    "contact_id": "c1049"
+  },
+  {
+    "id": "d5050",
+    "dealname": "Nimbus Bio — New business",
+    "company": "Nimbus Bio",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-28",
+    "contact_id": "c1050"
+  },
+  {
+    "id": "d5051",
+    "dealname": "Lumen Retail — New business",
+    "company": "Lumen Retail",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-07",
+    "contact_id": "c1051"
+  },
+  {
+    "id": "d5052",
+    "dealname": "Orbit Learning — New business",
+    "company": "Orbit Learning",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-21",
+    "contact_id": "c1052"
+  },
+  {
+    "id": "d5053",
+    "dealname": "Iron Learning — New business",
+    "company": "Iron Learning",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-11",
+    "contact_id": "c1053"
+  },
+  {
+    "id": "d5054",
+    "dealname": "North Learning — New business",
+    "company": "North Learning",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-20",
+    "contact_id": "c1054"
+  },
+  {
+    "id": "d5055",
+    "dealname": "Willow Health — New business",
+    "company": "Willow Health",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-07",
+    "contact_id": "c1055"
+  },
+  {
+    "id": "d5056",
+    "dealname": "Pixel Logistics — New business",
+    "company": "Pixel Logistics",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-01",
+    "contact_id": "c1056"
+  },
+  {
+    "id": "d5057",
+    "dealname": "Echo Labs — New business",
+    "company": "Echo Labs",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-01",
+    "contact_id": "c1057"
+  },
+  {
+    "id": "d5058",
+    "dealname": "Summit Bio — New business",
+    "company": "Summit Bio",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-16",
+    "contact_id": "c1058"
+  },
+  {
+    "id": "d5059",
+    "dealname": "Willow Works — New business",
+    "company": "Willow Works",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-12",
+    "contact_id": "c1059"
+  },
+  {
+    "id": "d5060",
+    "dealname": "Harbor Learning — New business",
+    "company": "Harbor Learning",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-20",
+    "contact_id": "c1060"
+  },
+  {
+    "id": "d5061",
+    "dealname": "Echo Learning — New business",
+    "company": "Echo Learning",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-03",
+    "contact_id": "c1061"
+  },
+  {
+    "id": "d5062",
+    "dealname": "North Bio — New business",
+    "company": "North Bio",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-19",
+    "contact_id": "c1062"
+  },
+  {
+    "id": "d5063",
+    "dealname": "Prairie Energy — New business",
+    "company": "Prairie Energy",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-22",
+    "contact_id": "c1063"
+  },
+  {
+    "id": "d5064",
+    "dealname": "Harbor Labs — New business",
+    "company": "Harbor Labs",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-08-15",
+    "contact_id": "c1064"
+  },
+  {
+    "id": "d5065",
+    "dealname": "Lumen Bio — New business",
+    "company": "Lumen Bio",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-11",
+    "contact_id": "c1065"
+  },
+  {
+    "id": "d5066",
+    "dealname": "Orbit Energy — New business",
+    "company": "Orbit Energy",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-17",
+    "contact_id": "c1066"
+  },
+  {
+    "id": "d5067",
+    "dealname": "Coral Labs — New business",
+    "company": "Coral Labs",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-18",
+    "contact_id": "c1067"
+  },
+  {
+    "id": "d5068",
+    "dealname": "Prairie Logistics — New business",
+    "company": "Prairie Logistics",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-01",
+    "contact_id": "c1068"
+  },
+  {
+    "id": "d5069",
+    "dealname": "Bright Labs — New business",
+    "company": "Bright Labs",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-09-30",
+    "contact_id": "c1966"
+  },
+  {
+    "id": "d5070",
+    "dealname": "Atlas Retail — New business",
+    "company": "Atlas Retail",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-07-24",
+    "contact_id": "c1070"
+  },
+  {
+    "id": "d5071",
+    "dealname": "Bright Analytics — New business",
+    "company": "Bright Analytics",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-06",
+    "contact_id": "c1071"
+  },
+  {
+    "id": "d5072",
+    "dealname": "Willow Energy — New business",
+    "company": "Willow Energy",
+    "amount": 30000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-05",
+    "contact_id": "c1072"
+  },
+  {
+    "id": "d5073",
+    "dealname": "Quantum Foods — New business",
+    "company": "Quantum Foods",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-08",
+    "contact_id": "c1073"
+  },
+  {
+    "id": "d5074",
+    "dealname": "Pixel Energy — New business",
+    "company": "Pixel Energy",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-17",
+    "contact_id": "c1074"
+  },
+  {
+    "id": "d5075",
+    "dealname": "Atlas Robotics — New business",
+    "company": "Atlas Robotics",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-24",
+    "contact_id": "c1075"
+  },
+  {
+    "id": "d5076",
+    "dealname": "Bright Cloud — New business",
+    "company": "Bright Cloud",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-26",
+    "contact_id": "c1076"
+  },
+  {
+    "id": "d5077",
+    "dealname": "Quantum Cloud — New business",
+    "company": "Quantum Cloud",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-23",
+    "contact_id": "c1077"
+  },
+  {
+    "id": "d5078",
+    "dealname": "North Finance — New business",
+    "company": "North Finance",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-17",
+    "contact_id": "c1078"
+  },
+  {
+    "id": "d5079",
+    "dealname": "Atlas Energy — New business",
+    "company": "Atlas Energy",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-05",
+    "contact_id": "c1079"
+  },
+  {
+    "id": "d5080",
+    "dealname": "Bright Energy — New business",
+    "company": "Bright Energy",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-11",
+    "contact_id": "c1080"
+  },
+  {
+    "id": "d5081",
+    "dealname": "Willow Retail — New business",
+    "company": "Willow Retail",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-16",
+    "contact_id": "c1081"
+  },
+  {
+    "id": "d5082",
+    "dealname": "Lumen Finance — New business",
+    "company": "Lumen Finance",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-31",
+    "contact_id": "c1082"
+  },
+  {
+    "id": "d5083",
+    "dealname": "Coral Cloud — New business",
+    "company": "Coral Cloud",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-15",
+    "contact_id": "c1083"
+  },
+  {
+    "id": "d5084",
+    "dealname": "Granite Media — New business",
+    "company": "Granite Media",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-19",
+    "contact_id": "c1084"
+  },
+  {
+    "id": "d5085",
+    "dealname": "Prairie Cloud — New business",
+    "company": "Prairie Cloud",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-19",
+    "contact_id": "c1085"
+  },
+  {
+    "id": "d5086",
+    "dealname": "Vector Systems — New business",
+    "company": "Vector Systems",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-18",
+    "contact_id": "c1086"
+  },
+  {
+    "id": "d5087",
+    "dealname": "Cedar Energy — New business",
+    "company": "Cedar Energy",
+    "amount": 36000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-05",
+    "contact_id": "c1087"
+  },
+  {
+    "id": "d5088",
+    "dealname": "North Systems — New business",
+    "company": "North Systems",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-15",
+    "contact_id": "c1088"
+  },
+  {
+    "id": "d5089",
+    "dealname": "Lumen Cloud — New business",
+    "company": "Lumen Cloud",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-06",
+    "contact_id": "c1089"
+  },
+  {
+    "id": "d5090",
+    "dealname": "Atlas Logistics — New business",
+    "company": "Atlas Logistics",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-01",
+    "contact_id": "c1090"
+  },
+  {
+    "id": "d5091",
+    "dealname": "Nimbus Robotics — New business",
+    "company": "Nimbus Robotics",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-13",
+    "contact_id": "c1091"
+  },
+  {
+    "id": "d5092",
+    "dealname": "Willow Logistics — New business",
+    "company": "Willow Logistics",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-21",
+    "contact_id": "c1092"
+  },
+  {
+    "id": "d5093",
+    "dealname": "Lumen Systems — New business",
+    "company": "Lumen Systems",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-08",
+    "contact_id": "c1093"
+  },
+  {
+    "id": "d5094",
+    "dealname": "Nimbus Health — New business",
+    "company": "Nimbus Health",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-04",
+    "contact_id": "c1094"
+  },
+  {
+    "id": "d5095",
+    "dealname": "Quantum Logistics — New business",
+    "company": "Quantum Logistics",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-04",
+    "contact_id": "c1095"
+  },
+  {
+    "id": "d5096",
+    "dealname": "Iron Health — New business",
+    "company": "Iron Health",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-25",
+    "contact_id": "c1096"
+  },
+  {
+    "id": "d5097",
+    "dealname": "Nimbus Labs — New business",
+    "company": "Nimbus Labs",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-28",
+    "contact_id": "c1097"
+  },
+  {
+    "id": "d5098",
+    "dealname": "Iron Logistics — New business",
+    "company": "Iron Logistics",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-10",
+    "contact_id": "c1098"
+  },
+  {
+    "id": "d5099",
+    "dealname": "North Labs — New business",
+    "company": "North Labs",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-10",
+    "contact_id": "c1099"
+  },
+  {
+    "id": "d5100",
+    "dealname": "North Media — New business",
+    "company": "North Media",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-07",
+    "contact_id": "c1100"
+  },
+  {
+    "id": "d5101",
+    "dealname": "Silver Robotics — New business",
+    "company": "Silver Robotics",
+    "amount": 6000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-19",
+    "contact_id": "c1101"
+  },
+  {
+    "id": "d5102",
+    "dealname": "Vector Analytics — New business",
+    "company": "Vector Analytics",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-30",
+    "contact_id": "c1102"
+  },
+  {
+    "id": "d5103",
+    "dealname": "Nimbus Systems — New business",
+    "company": "Nimbus Systems",
+    "amount": 18000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-13",
+    "contact_id": "c1103"
+  },
+  {
+    "id": "d5104",
+    "dealname": "Silver Learning — New business",
+    "company": "Silver Learning",
+    "amount": 24000,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-11",
+    "contact_id": "c1104"
+  },
+  {
+    "id": "d5105",
+    "dealname": "Prairie Foods — New business",
+    "company": "Prairie Foods",
+    "amount": 48000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-04",
+    "contact_id": "c1105"
+  },
+  {
+    "id": "d5106",
+    "dealname": "Harbor Finance — New business",
+    "company": "Harbor Finance",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-04-15",
+    "contact_id": "c1106"
+  },
+  {
+    "id": "d5107",
+    "dealname": "Pixel Learning — New business",
+    "company": "Pixel Learning",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-13",
+    "contact_id": "c1107"
+  },
+  {
+    "id": "d5108",
+    "dealname": "Harbor Robotics — New business",
+    "company": "Harbor Robotics",
+    "amount": 12000,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-17",
+    "contact_id": "c1108"
+  },
+  {
+    "id": "d5109",
+    "dealname": "Echo Analytics — New business",
+    "company": "Echo Analytics",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-05-29",
+    "contact_id": "c1109"
+  },
+  {
+    "id": "d5110",
+    "dealname": "Lumen Media — New business",
+    "company": "Lumen Media",
+    "amount": 9600,
+    "dealstage": "closedwon",
+    "closedate": "2026-06-13",
+    "contact_id": "c1110"
+  },
+  {
+    "id": "d5111",
+    "dealname": "Cedar Health — New business",
+    "company": "Cedar Health",
+    "amount": 30000,
+    "dealstage": "closedlost",
+    "closedate": "2026-09-17",
+    "contact_id": "c1111"
+  },
+  {
+    "id": "d5112",
+    "dealname": "Pixel Robotics — New business",
+    "company": "Pixel Robotics",
+    "amount": 9600,
+    "dealstage": "closedlost",
+    "closedate": "2026-08-18",
+    "contact_id": "c1112"
+  },
+  {
+    "id": "d5113",
+    "dealname": "Granite Labs — New business",
+    "company": "Granite Labs",
+    "amount": 12000,
+    "dealstage": "closedlost",
+    "closedate": "2026-09-24",
+    "contact_id": "c1113"
+  },
+  {
+    "id": "d5114",
+    "dealname": "Pixel Finance — New business",
+    "company": "Pixel Finance",
+    "amount": 12000,
+    "dealstage": "closedlost",
+    "closedate": "2026-09-24",
+    "contact_id": "c1114"
+  },
+  {
+    "id": "d5115",
+    "dealname": "North Energy — New business",
+    "company": "North Energy",
+    "amount": 24000,
+    "dealstage": "closedlost",
+    "closedate": "2026-09-11",
+    "contact_id": "c1115"
+  },
+  {
+    "id": "d5116",
+    "dealname": "Quantum Learning — New business",
+    "company": "Quantum Learning",
+    "amount": 30000,
+    "dealstage": "closedlost",
+    "closedate": "2026-09-09",
+    "contact_id": "c1116"
+  },
+  {
+    "id": "d5117",
+    "dealname": "Atlas Health — New business",
+    "company": "Atlas Health",
+    "amount": 6000,
+    "dealstage": "closedlost",
+    "closedate": "2026-07-20",
+    "contact_id": "c1117"
+  },
+  {
+    "id": "d5118",
+    "dealname": "Nimbus Finance — New business",
+    "company": "Nimbus Finance",
+    "amount": 18000,
+    "dealstage": "closedlost",
+    "closedate": "2026-08-08",
+    "contact_id": "c1118"
+  },
+  {
+    "id": "d5119",
+    "dealname": "Summit Media — New business",
+    "company": "Summit Media",
+    "amount": 24000,
+    "dealstage": "closedlost",
+    "closedate": "2026-08-11",
+    "contact_id": "c1119"
+  },
+  {
+    "id": "d5120",
+    "dealname": "Granite Retail — New business",
+    "company": "Granite Retail",
+    "amount": 24000,
+    "dealstage": "closedlost",
+    "closedate": "2026-07-12",
+    "contact_id": "c1120"
+  },
+  {
+    "id": "d5121",
+    "dealname": "Orbit Logistics — New business",
+    "company": "Orbit Logistics",
+    "amount": 9600,
+    "dealstage": "closedlost",
+    "closedate": "2026-09-16",
+    "contact_id": "c1121"
+  },
+  {
+    "id": "d5122",
+    "dealname": "Orbit Robotics — New business",
+    "company": "Orbit Robotics",
+    "amount": 12000,
+    "dealstage": "closedlost",
+    "closedate": "2026-08-15",
+    "contact_id": "c1122"
+  },
+  {
+    "id": "d5123",
+    "dealname": "Pixel Systems — New business",
+    "company": "Pixel Systems",
+    "amount": 18000,
+    "dealstage": "closedlost",
+    "closedate": "2026-09-20",
+    "contact_id": "c1123"
+  },
+  {
+    "id": "d5124",
+    "dealname": "Lumen Robotics — New business",
+    "company": "Lumen Robotics",
+    "amount": 30000,
+    "dealstage": "closedlost",
+    "closedate": "2026-08-02",
+    "contact_id": "c1124"
+  },
+  {
+    "id": "d5125",
+    "dealname": "Harbor Foods — New business",
+    "company": "Harbor Foods",
+    "amount": 12000,
+    "dealstage": "closedlost",
+    "closedate": "2026-07-22",
+    "contact_id": "c1125"
+  },
+  {
+    "id": "d5126",
+    "dealname": "Prairie Health — New business",
+    "company": "Prairie Health",
+    "amount": 6000,
+    "dealstage": "contractsent",
+    "closedate": "2026-07-08",
+    "contact_id": "c1126"
+  },
+  {
+    "id": "d5127",
+    "dealname": "Cedar Works — New business",
+    "company": "Cedar Works",
+    "amount": 18000,
+    "dealstage": "contractsent",
+    "closedate": "2026-09-02",
+    "contact_id": "c1127"
+  },
+  {
+    "id": "d5128",
+    "dealname": "North Foods — New business",
+    "company": "North Foods",
+    "amount": 36000,
+    "dealstage": "contractsent",
+    "closedate": "2026-07-07",
+    "contact_id": "c1128"
+  },
+  {
+    "id": "d5129",
+    "dealname": "Willow Analytics — New business",
+    "company": "Willow Analytics",
+    "amount": 48000,
+    "dealstage": "contractsent",
+    "closedate": "2026-09-27",
+    "contact_id": "c1129"
+  },
+  {
+    "id": "d5130",
+    "dealname": "Bright Foods — New business",
+    "company": "Bright Foods",
+    "amount": 9600,
+    "dealstage": "contractsent",
+    "closedate": "2026-07-29",
+    "contact_id": "c1130"
+  },
+  {
+    "id": "d5131",
+    "dealname": "Prairie Robotics — New business",
+    "company": "Prairie Robotics",
+    "amount": 18000,
+    "dealstage": "contractsent",
+    "closedate": "2026-08-23",
+    "contact_id": "c1131"
+  },
+  {
+    "id": "d5132",
+    "dealname": "Coral Analytics — New business",
+    "company": "Coral Analytics",
+    "amount": 9600,
+    "dealstage": "contractsent",
+    "closedate": "2026-07-27",
+    "contact_id": "c1132"
+  },
+  {
+    "id": "d5133",
+    "dealname": "Nimbus Foods — New business",
+    "company": "Nimbus Foods",
+    "amount": 6000,
+    "dealstage": "contractsent",
+    "closedate": "2026-09-01",
+    "contact_id": "c1133"
+  },
+  {
+    "id": "d5134",
+    "dealname": "Granite Analytics — New business",
+    "company": "Granite Analytics",
+    "amount": 48000,
+    "dealstage": "contractsent",
+    "closedate": "2026-08-20",
+    "contact_id": "c1134"
+  },
+  {
+    "id": "d5135",
+    "dealname": "Coral Learning — New business",
+    "company": "Coral Learning",
+    "amount": 18000,
+    "dealstage": "contractsent",
+    "closedate": "2026-07-07",
+    "contact_id": "c1135"
+  },
+  {
+    "id": "d5136",
+    "dealname": "Cedar Media — New business",
+    "company": "Cedar Media",
+    "amount": 9600,
+    "dealstage": "contractsent",
+    "closedate": "2026-08-06",
+    "contact_id": "c1136"
+  },
+  {
+    "id": "d5137",
+    "dealname": "Echo Health — New business",
+    "company": "Echo Health",
+    "amount": 18000,
+    "dealstage": "contractsent",
+    "closedate": "2026-09-22",
+    "contact_id": "c1137"
+  },
+  {
+    "id": "d5138",
+    "dealname": "Summit Retail — New business",
+    "company": "Summit Retail",
+    "amount": 30000,
+    "dealstage": "contractsent",
+    "closedate": "2026-08-03",
+    "contact_id": "c1138"
+  },
+  {
+    "id": "d5139",
+    "dealname": "Iron Finance — New business",
+    "company": "Iron Finance",
+    "amount": 9600,
+    "dealstage": "contractsent",
+    "closedate": "2026-07-12",
+    "contact_id": "c1139"
+  },
+  {
+    "id": "d5140",
+    "dealname": "Coral Bio — New business",
+    "company": "Coral Bio",
+    "amount": 36000,
+    "dealstage": "contractsent",
+    "closedate": "2026-07-12",
+    "contact_id": "c1140"
+  }
+]

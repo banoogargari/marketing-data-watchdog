@@ -1,0 +1,45 @@
+{
+  "scenario": "missing-source",
+  "description": "utm_source goes empty for 35% of new contacts from Aug 14.",
+  "period": {
+    "start": "2026-07-01",
+    "end": "2026-09-30",
+    "label": "Q3 2026"
+  },
+  "problems": [
+    "C1"
+  ],
+  "C1": {
+    "start_date": "2026-08-14",
+    "contacts": 39,
+    "deal_ids": [
+      "d5061",
+      "d5066",
+      "d5005",
+      "d5048",
+      "d5029"
+    ],
+    "arr": 121200
+  },
+  "arr_by_channel": {
+    "reported": {
+      "google_ads": 349200,
+      "linkedin": 364800,
+      "organic": 151200,
+      "Unknown": 121200,
+      "referral": 150000,
+      "email": 252000,
+      "webinar": 159600
+    },
+    "after_fixes": {
+      "google_ads": 349200,
+      "linkedin": 364800,
+      "organic": 151200,
+      "Unknown": 121200,
+      "referral": 150000,
+      "email": 252000,
+      "webinar": 159600
+    }
+  },
+  "total_arr": 1548000
+}
