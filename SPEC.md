@@ -1,212 +1,235 @@
 # Marketing Data Watchdog — Spec
 
-**Status:** Draft v0.1 · **Author:** Banoo Gargari · **Last updated:** 2026-10-08
+**Status:** Draft v0.2 · **Author:** Banoo Gargari · **Last updated:** 2026-10-08
 
-## 1. Problem
+## 1. The question this answers
 
-Marketing data lives in several systems — a CRM (HubSpot), a billing system (Stripe), and the dashboards built on top. They are supposed to agree, but they drift apart silently: a form stops filling a field, a sync stops, someone tags a campaign `LinkedIn` instead of `linkedin`. Nobody notices for weeks, and decisions get made on wrong numbers.
+> **"How much ARR did marketing source this quarter, by channel, and can we trust that number?"**
 
-Today, catching this depends on a person happening to look. The weekly performance report is assembled by hand, and it presents every number with the same confidence whether or not the data behind it is sound.
+In a typical B2B marketing setup the answer comes from a chain:
+
+```
+Contact          →  Opportunity (deal)  →  Closed won  →  ARR          →  Billed
+has a source        linked to contact       in period      on the deal      in Stripe
+(UTM / channel)
+```
+
+Marketing-sourced ARR by channel = closed-won deal ARR, grouped by the source of the contact the deal belongs to.
+
+That number is only right if **every link in the chain is connected and clean.** When a link breaks, ARR lands on the wrong channel, disappears into "Unknown," or is counted twice, and the report still looks fine. People then move budget based on it.
 
 ## 2. Goal
 
-An agent that checks the marketing data every run, investigates anything that looks wrong, and produces a weekly report that **separates numbers you can trust from numbers you can't, and says why.**
+An agent that walks the chain every run, finds the broken links, measures how much ARR each one moves, proposes fixes, and produces an **ARR-by-channel report that marks every number as trusted or not, with the reason.**
 
-Guiding principle: **an agent reporting confidently on bad data is worse than no agent.** Verification is part of the product, not an afterthought, so the eval suite ships with the agent.
+Guiding principle: **an agent reporting confidently on bad data is worse than no agent.** So the agent never invents numbers, and the eval suite ships with it.
 
 ### Success criteria (v1)
 
-Measured by the eval suite (Section 7) across all scenarios:
+Measured by the eval suite (Section 8):
 
 | Metric | Target |
 |---|---|
-| Planted issues detected (recall) | ≥ 90% |
+| Planted problems detected (recall) | ≥ 90% |
 | False alarms per scenario | ≤ 1 |
-| Affected metrics reported without a caveat ("confident on bad data") | **0** |
-| Numbers in the report that don't match a tool result | **0** |
-| Clean scenario (no planted issues) | Report says "no issues found" |
+| ARR impact of each problem (dollar amount) | exactly matches ground truth |
+| Channels affected by a problem but shown as trusted ✅ | **0** |
+| Numbers in the report not traceable to a tool result | **0** |
+| Clean scenario | Report says "no issues found," all channels ✅ |
 
 ## 3. Scope
 
 ### In scope (v1)
-- **Two sources:** HubSpot contacts and deals (live, via API, from a developer test account) and payments (a local Stripe-shaped JSON file).
-- **Four checks** (Section 5).
-- **Investigation:** for each failed check, find when it started, how many records, and which metrics it affects.
-- **Weekly report** in Markdown: headline metrics, issues found, trust status per metric.
-- **Proposed fixes** written to a file (e.g. a duplicate-merge list). Never applied automatically.
-- **Eval suite** with planted-issue scenarios and a scored results table.
-- **Offline mode:** the same agent runs against local fixture files instead of HubSpot, so evals are fast, free of setup, and repeatable.
+- **Data:** HubSpot contacts and deals (live, from a developer test account) and billing (a local Stripe-shaped JSON file).
+- **Attribution model:** original source (first touch) on the contact. Simple, common, easy to verify.
+- **Five checks**, one per way the chain breaks (Section 5).
+- **ARR impact:** for each problem, how many deals and how many dollars of ARR it affects, and which channels.
+- **"After fixes" view:** ARR by channel recomputed as if the proposed fixes were applied, so the report can say "LinkedIn shows $40K, would be $65K after fixes."
+- **Proposed fixes** written to CSV files. Never applied automatically.
+- **Report** as a standalone HTML page (plus Markdown for GitHub).
+- **Eval suite** with planted-problem scenarios and a scored results table.
+- **Offline mode:** the same agent runs on local files instead of HubSpot, for fast, free, repeatable evals.
 
 ### Out of scope (v1)
-- Writing anything back to HubSpot or Stripe.
-- Scheduling (runs are started from the command line; a cron/GitHub Action is a v2 note).
-- Live Stripe API (Stripe test mode is the v2 swap; the payments data already uses Stripe's shape).
-- A UI. Output is a CLI run plus a Markdown report.
-- PostHog, Customer.io, warehouse, GA4.
+- Writing anything back to HubSpot or Stripe (v2: apply approved fixes).
+- Multi-touch / influenced attribution (v2; the data model leaves room for engagement records).
+- Live Stripe API (v2; the billing file already uses Stripe's shape).
+- Scheduling, UI, other systems (Customer.io, PostHog, warehouse, GA4).
 
-## 4. Inputs and outputs
+## 4. The data
 
-**Inputs**
-- HubSpot test account, read through a private-app token (contacts: `email`, `createdate`, `lifecyclestage`, `utm_source`, `utm_medium`, `utm_campaign`; deals: `amount`, `closedate`, `dealstage`, associated contact).
-- `data/payments.json`: Stripe-shaped charges/subscriptions (`id`, `customer_email`, `amount`, `currency`, `created`, `status`).
-- Reporting window (default: last 7 days).
+All data is synthetic, generated by a seed script, shaped like a real B2B setup.
 
-**Outputs**
-- `reports/weekly-YYYY-MM-DD.md`: the report (example in Section 6).
-- `reports/run-YYYY-MM-DD.json`: machine-readable findings (used by the eval scorer).
-- `reports/proposed-fixes/`: e.g. `duplicate-merges.csv`, `utm-normalization-map.csv`.
+**Contacts** (HubSpot)
+`id, email, firstname, lastname, company, createdate, utm_source, utm_medium, utm_campaign, lifecyclestage`
 
-## 5. The checks
+**Deals / opportunities** (HubSpot)
+`id, dealname, amount (= ARR), dealstage, closedate, associated contact id`
 
-Each check is deterministic code exposed to the agent as a tool. The tool returns facts; the agent decides what they mean and investigates further.
+**Billing** (`data/billing.json`, Stripe-shaped)
+`subscription id, customer_email, plan amount, interval (month/year), status, start_date`
+Billed ARR = monthly amount × 12, or yearly amount.
 
-| # | Check | What it detects | Example finding |
-|---|---|---|---|
-| C1 | **Duplicate contacts** | Same person stored twice: emails that match after lowercasing/trimming, or Gmail dot/plus variants | "42 duplicate pairs; 30 created on Oct 4" |
-| C2 | **Field going empty** | Null rate of a key property jumps vs. its baseline (e.g. `utm_source` 2% → 38%) | "utm_source empty on 38% of contacts since Oct 3" |
-| C3 | **Revenue mismatch** | Stripe revenue vs. HubSpot closed-won deal revenue for the same window; lists payments with no matching deal and vice versa | "Stripe $3,870 vs HubSpot $3,410; 6 payments have no deal" |
-| C4 | **Messy UTM values** | Variants of the same source/medium (`LinkedIn`, `linkedin`, `li`, `linkedin.com`) splitting one channel into several | "linkedin appears as 4 spellings; channel totals understated" |
+**Channels:** linkedin, google_ads, email, webinar, organic, referral, plus "unknown" when no source.
 
-**Stretch (if time):** C5 *Stale source* — no new records from a source for longer than expected (the "sync stopped" case).
+**Source of truth per field** (when systems disagree):
+- **Channel** → the contact's normalized `utm_source`
+- **ARR** → what is billed in Stripe; the deal amount is what sales entered
+
+## 5. The checks: how the chain breaks
+
+Each check is plain JavaScript that returns facts (records, counts, dollars). The agent calls them as tools.
+
+| # | Check | Broken link | Effect on ARR by channel | Proposed fix |
+|---|---|---|---|---|
+| C1 | **Missing source** | Contact has empty `utm_source`, often starting on a specific date (a form broke) | Real marketing ARR shows as "Unknown" | List of affected contacts + date it started; flag for investigation (source can't be guessed) |
+| C2 | **Channel spelled several ways** | `LinkedIn`, `linkedin`, `li`, `linkedin.com` | One channel split across several rows, each looks small | Normalization map `variant → channel` |
+| C3 | **Duplicate contacts** | Same person twice; the ad click is on one record, the deal on the other | Deal's contact has no source → ARR goes to "Unknown"; or counted twice | Merge list: which record to keep (the one with the source) |
+| C4 | **Deal not linked to a contact** | Closed-won deal with no associated contact | ARR can't be attributed to any channel | Suggested contact match by company/email domain, marked as a suggestion |
+| C5 | **Deal ARR ≠ billed ARR** | Deal says $12K, Stripe bills $9K; or billed with no deal | Marketing ARR over- or under-stated | List of mismatches with both amounts |
 
 ## 6. How it works
 
 ```
-         ┌──────────────┐     ┌───────────────┐
-         │ HubSpot API  │     │ payments.json │      (or fixture files in offline mode)
-         └──────┬───────┘     └───────┬───────┘
-                └─────────┬───────────┘
-                    data loaders
-                          │
-          ┌───────────────┴────────────────┐
-          │  Tools (deterministic JS)      │
-          │  run_checks · get_metrics      │
-          │  query_contacts · query_deals  │
-          │  query_payments · compare_...  │
-          └───────────────┬────────────────┘
-                          │ tool calls
-                ┌─────────┴─────────┐
-                │  Agent (Claude)   │  investigates, decides trust status
-                └─────────┬─────────┘
-                          │
-                 ┌────────┴────────┐
-                 │ Report verifier │  every number must match a tool result
-                 └────────┬────────┘
-                          ▼
-            weekly report · findings JSON · proposed fixes
+   HubSpot API (or local files)        billing.json
+               └──────────────┬──────────────┘
+                         data loaders
+                              │
+        ┌─────────────────────┴─────────────────────┐
+        │ Tools (deterministic JavaScript)          │
+        │ run_checks · arr_by_channel               │
+        │ arr_by_channel_after_fixes · get_records  │
+        └─────────────────────┬─────────────────────┘
+                              │ tool calls
+                     ┌────────┴────────┐
+                     │ Agent (Claude)  │  investigates, explains, decides trust
+                     └────────┬────────┘
+                     ┌────────┴────────┐
+                     │ Verifier (code) │  every number must come from a tool
+                     └────────┬────────┘
+                              ▼
+              report · findings JSON · proposed-fix CSVs
 ```
 
 **Run steps**
-1. Load data for the window (HubSpot or fixtures, plus payments).
-2. Agent calls `run_checks` for the summary of C1–C4.
-3. For each failed check, the agent investigates with query tools: start date, record count, affected metrics.
-4. Agent calls `get_metrics` for headline numbers (signups, closed-won deals, revenue, signups by channel).
-5. Agent writes structured findings: each issue has `check`, `severity`, `evidence`, `affected_metrics`, `suggested_fix`.
-6. **Verifier** (plain code, not the LLM) checks that every number in the findings and report appears in a tool result, and that every metric listed as affected carries a caveat. If verification fails, the run is marked failed rather than published.
-7. Report and fix files are written.
+1. Load contacts, deals, billing for the period (default: current quarter).
+2. Agent calls `arr_by_channel` → the number as it would be reported today.
+3. Agent calls `run_checks` → which of C1–C5 found problems.
+4. For each problem, agent investigates with `get_records`: when it started, how many deals, how much ARR, which channels.
+5. Agent calls `arr_by_channel_after_fixes` → the corrected view.
+6. Agent writes findings: `check, evidence, deals_affected, arr_affected, channels_affected, proposed_fix`.
+7. **Verifier** (code, not AI) checks every number against tool results and that every affected channel is marked ⚠️. If it fails, no report is published and the run is marked failed.
+8. Report and fix files are written.
 
 **Design rules**
-- **The LLM never does arithmetic.** All counts and sums come from tools; the agent only interprets and explains them.
-- **Every claim cites evidence**: a tool result the verifier can check.
-- **Read-only.** Fixes are proposals in files; a human applies them.
+- **The AI never does math.** Tools compute every count and dollar amount; the AI investigates and explains.
+- **Every claim has evidence** the verifier can check.
+- **Read-only.** Fixes are proposals; a human approves.
 - **Model is configurable** (`ANTHROPIC_MODEL` in `.env`).
 
-### Example report
+## 7. Example report
 
-> **Weekly Marketing Report: Oct 1–7**
+> **Marketing-Sourced ARR: Q3 2026**
 >
-> | Metric | Value | Trust |
-> |---|---|---|
-> | Signups | 1,240 | ✅ |
-> | Closed-won deals | 86 | ✅ |
-> | Revenue (Stripe) | $3,870 | ✅ |
-> | Revenue (HubSpot) | $3,410 | ⚠️ see issue 2 |
-> | Signups by channel | — | ⚠️ see issues 1, 4 |
+> | Channel | Reported ARR | After fixes | Trust |
+> |---|---|---|---|
+> | linkedin | $40,000 | $65,000 | ⚠️ issue 1 |
+> | li / LinkedIn / linkedin.com | $25,000 | — | ⚠️ issue 1 |
+> | google_ads | $72,000 | $72,000 | ✅ |
+> | email | $31,000 | $38,000 | ⚠️ issue 3 |
+> | webinar | $18,000 | $18,000 | ✅ |
+> | Unknown | $46,000 | $39,000 | ⚠️ issues 2, 3, 4 |
+> | **Total** | **$232,000** | **$232,000*** | |
+>
+> \* Stripe bills $8,000 less than these deals say: $224,000 (issue 5)
 >
 > **Issues**
-> 1. **utm_source empty on 38% of new contacts since Oct 3** (baseline 2%). Channel attribution for this week is unreliable. Likely cause: a signup form change on Oct 3.
-> 2. **Revenue mismatch:** Stripe $3,870 vs HubSpot $3,410. 6 Stripe payments have no HubSpot deal → `proposed-fixes/unmatched-payments.csv`.
-> 3. **42 duplicate contacts** (case variants of the same email). Signup count may be overstated by up to 42 → `proposed-fixes/duplicate-merges.csv`.
->
-> No issues: lifecycle stages, payment statuses.
+> 1. **linkedin spelled 3 ways** (`li`, `LinkedIn`, `linkedin.com`): 6 deals, $25,000 ARR reported outside linkedin → `fixes/channel-map.csv`
+> 2. **utm_source empty since Aug 14** on 31% of new contacts (before: 3%). 5 closed-won deals, $14,000 ARR now under Unknown. Likely a form change on Aug 14; source can't be recovered automatically.
+> 3. **9 duplicate contacts** where the deal sits on the record without a source: $7,000 ARR moves from Unknown to email after merge → `fixes/merge-list.csv`
+> 4. **4 closed-won deals with no contact** ($25,000 ARR). Suggested matches by email domain → `fixes/deal-contact-matches.csv`. Stays under Unknown until a person confirms the matches.
+> 5. **Deal ARR ≠ billed:** 3 deals total $8,000 more than Stripe bills → `fixes/arr-mismatches.csv`
 
-## 7. Evaluation
+## 8. Evaluation
 
-**Scenarios** are generated by a seed script with a fixed random seed. Each has a `ground-truth.json` listing the planted issues.
+**Scenarios** are generated by `npm run seed` with a fixed random seed. Each has a `ground-truth.json` listing the planted problems, the deals they affect and the ARR moved.
 
-| Scenario | Planted issues |
+| Scenario | Planted problems |
 |---|---|
 | `clean` | none (tests false alarms) |
-| `dupes` | duplicate contacts (case + Gmail-dot variants) |
-| `null-spike` | `utm_source` goes empty from a given date |
-| `revenue-gap` | payments with no deal, and a deal with the wrong amount |
-| `utm-mess` | linkedin/facebook spelled several ways |
-| `everything` | all of the above at once |
-| `subtle` | small versions (e.g. 3 dupes, a 2% → 9% null rise) to test sensitivity |
+| `missing-source` | utm_source goes empty from a given date |
+| `channel-spelling` | linkedin and google_ads each spelled several ways |
+| `duplicates` | duplicates where the deal is on the no-source record |
+| `orphan-deals` | closed-won deals with no contact |
+| `billing-gap` | deal ARR ≠ billed ARR; billed customers with no deal |
+| `everything` | all of the above together |
+| `subtle` | small versions (2 duplicates, a $1K billing gap) to test sensitivity |
 
-**Scorer** (`npm run eval`) compares `run-*.json` with ground truth and outputs:
-- recall per check type and overall
-- false positives per scenario
-- confident-on-bad-data count (affected metric shown as ✅)
+**Scorer** (`npm run eval`) compares agent findings with ground truth and reports:
+- recall per check and overall
+- false alarms per scenario
+- ARR impact accuracy (dollar match)
+- channels wrongly shown as ✅
 - verifier failures
-- cost and run time per scenario
+- cost and run time
 
-Results go into a table in the README. Each scenario runs 3 times to show consistency.
+Each scenario runs 3 times to show consistency. Results go into a table in the README.
 
-## 8. Tech stack
+## 9. Tech stack
 
 - Node.js 20+, JavaScript (ES modules)
-- `@anthropic-ai/sdk` with tool use for the agent loop
-- `@hubspot/api-client` for HubSpot
-- `dotenv` for secrets; `.env` is git-ignored, `.env.example` is committed
-- No database for v1: data is loaded into memory (small volumes)
+- `@anthropic-ai/sdk`, tool use for the agent loop
+- `@hubspot/api-client`
+- `dotenv`; `.env` is git-ignored, `.env.example` is committed
+- No database: small data volumes are loaded into memory
 
-## 9. Repo layout
+## 10. Repo layout
 
 ```
 marketing-data-watchdog/
 ├── SPEC.md
-├── README.md               # what it is, how to run, eval results, demo link
+├── README.md               # what it is, how to run, eval results, demo
 ├── .env.example
 ├── src/
-│   ├── index.js            # CLI entry: npm run watchdog -- --source hubspot|fixtures
-│   ├── agent.js            # agent loop + system prompt
-│   ├── tools/              # tool definitions the agent can call
-│   ├── checks/             # C1–C4, pure functions, unit-tested
-│   ├── sources/            # hubspot.js, fixtures.js, payments.js
+│   ├── index.js            # CLI: npm run watchdog -- --source hubspot|files
+│   ├── agent.js            # agent loop + instructions
+│   ├── tools/              # tools the agent can call
+│   ├── checks/             # C1–C5, pure functions, unit-tested
+│   ├── attribution.js      # ARR by channel (before/after fixes)
+│   ├── sources/            # hubspot.js, files.js, billing.js
 │   ├── verify.js           # report verifier
 │   └── report.js           # Markdown writer
 ├── scripts/
-│   ├── seed-fixtures.js    # generates scenarios + ground truth
+│   ├── seed.js             # generates scenarios + ground truth
 │   └── seed-hubspot.js     # loads a scenario into the HubSpot test account
 ├── evals/
 │   ├── scenarios/
 │   └── score.js
-├── reports/                # outputs (example committed, rest ignored)
-└── test/                   # unit tests for checks and verifier
+├── reports/                # outputs (one example committed)
+└── test/
 ```
 
-## 10. Plan (one weekend)
+## 11. Plan (one weekend)
 
 | When | Work | Done when |
 |---|---|---|
-| Sat AM | Finalize spec; repo setup; seed script + scenarios | `npm run seed` creates all scenarios with ground truth |
-| Sat PM | Checks C1–C4 + unit tests; fixtures source | `npm test` passes |
-| Sun AM | Agent loop, tools, verifier, report writer | Agent produces a correct report for `everything` offline |
-| Sun PM | Eval scorer + results table; HubSpot source + seed one scenario into test account; README; demo recording | README shows eval table; one run against live HubSpot |
+| Sat AM | Finalize spec; project setup; seed script | `npm run seed` creates all scenarios with ground truth |
+| Sat PM | `attribution.js` + checks C1–C5 + unit tests | `npm test` passes; ARR numbers match ground truth |
+| Sun AM | Agent, tools, verifier, report | Correct report for `everything` in offline mode |
+| Sun PM | Scorer; HubSpot loader + seed one scenario into test account; README; demo video | README has eval table; one run against live HubSpot |
 
-## 11. Risks and open questions
+## 12. Risks and open questions
 
-- **HubSpot test account custom properties:** UTM fields may need to be created as custom contact properties. The seed script creates them if missing.
-- **Matching payments to deals:** v1 matches on email + amount + date within ±2 days. Fuzzy cases are flagged, not guessed.
-- **Thresholds for "suddenly empty":** v1 uses a simple rule (rate more than 3× baseline and above 5%). Documented and tunable.
-- **LLM variability:** handled by deterministic checks + verifier + 3 runs per scenario in evals.
-- **Cost:** expected under $5 for development plus evals; scorer reports actual cost.
+- **HubSpot custom properties:** UTM fields may need creating in the test account. `seed-hubspot.js` creates them if missing.
+- **Matching deals to billing:** first by exact email (deal's contact email = Stripe `customer_email`), then by company email domain, which is marked "needs review." Amounts are never used to match; they are compared *after* matching, otherwise real ARR gaps would be missed. Closed-won deals with no subscription, and subscriptions with no deal, are both flagged. In production, matching would use a shared Stripe customer ID stored on the HubSpot record.
+- **"Suddenly empty" rule:** empty rate more than 3× the earlier baseline and above 5%. Documented and adjustable.
+- **Orphan deal suggestions** can be wrong; always marked "needs review."
+- **AI variability:** handled by deterministic checks, the verifier, and 3 runs per scenario.
+- **Cost:** expected under $5 total; the scorer reports actual cost.
 
-## 12. Definitions
+## 13. Definitions
 
-- **Signup:** a HubSpot contact with `createdate` in the window, after de-duplication.
-- **Revenue (Stripe):** sum of `succeeded` charges in the window, in USD.
-- **Revenue (HubSpot):** sum of `amount` on deals with stage `closedwon` and `closedate` in the window.
-- **Channel:** normalized `utm_source` (normalization map in `src/checks/utm.js`).
-- **Trust status:** ✅ no open issue affects the metric · ⚠️ an issue affects it (with a link to the issue).
+- **Marketing-sourced ARR:** sum of `amount` on deals with stage `closedwon` and `closedate` in the period, where the deal's contact has a marketing channel as its source.
+- **Channel:** the contact's `utm_source`, normalized with the channel map; empty → "Unknown."
+- **Billed ARR:** active Stripe subscription amount × 12 (monthly) or × 1 (yearly).
+- **Trusted ✅:** no open problem affects the channel's ARR. **⚠️:** at least one does, with a link to it.
